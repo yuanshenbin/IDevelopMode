@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/develop_mode_headler" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"></ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1" />
+
+    <EditText
+        android:id="@+id/ed_api"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="api地址，可多个,数组逗号隔开"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <EditText
+        android:digits="0123456789"
+        android:id="@+id/ed_code"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="appCode"
+        android:inputType="number"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/ed_version"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="appVersion"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+</LinearLayout>

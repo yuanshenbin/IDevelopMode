@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/develop_mode_headler" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#d91f2f"
+        android:textSize="12sp"
+        android:text="*默认粘贴所有的分享内容"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请求url:"
+                    android:textColor="#d91f2f"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:text="粘贴"
+                    android:id="@+id/btn_copy_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请求param:"
+                    android:textColor="#d91f2f"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:text="粘贴"
+                    android:id="@+id/btn_copy_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请求result:"
+                    android:textColor="#d91f2f"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:text="粘贴"
+                    android:id="@+id/btn_copy_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="请求headers:"
+                    android:textColor="#d91f2f"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:text="粘贴"
+                    android:id="@+id/btn_copy_headers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_headers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_marginTop="12dp"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
